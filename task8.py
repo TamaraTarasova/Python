@@ -11,7 +11,7 @@
 n = int(input("Введите количество долек в длину: "))
 m = int(input("Введите количесво долек в ширину: "))
 k = int(input("Сколько  долек отломили: "))
-if k == n or k == m:
+if k % n == 0 or k % m == 0 and k < m*n:
     print("Yes")
 else:
     print("No")
