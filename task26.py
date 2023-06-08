@@ -2,8 +2,8 @@
 def degree(m, n):
     if n == 0:
         return 1
-    print 
-    return m * degree(m, n - 1)
+    
+    return degree(m, n - 1) * m
   
     
 
